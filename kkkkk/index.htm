@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORING STORE 11250618 </title>
+<style>
+/* 通用設定 */
+    * {
+        box-sizing: border-box;
+    }
+    h1, h2, h3, h4, p {
+        margin: 0;/*清除傳統標籤預設的margin*/
+    }
+    h1 {
+        font-size: 100px;
+        margin-top: -250px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+    }
+    h2 {
+        font-size: 30px;
+        color: rgb(48, 255, 25);
+        text-align: center;
+        margin: 20px;
+    }
+    .left-align {
+        text-align: left;
+    }
+    .center-align {
+        text-align: center;
+    }
+    body {
+        font-family: sans-serif;/*設定頁面預設字體*/
+    }
+    img {
+        width: 100%;/*讓圖檔寬度等於上一層的寬度*/
+    }
+    .card-image {
+        height: 200px;
+        object-fit: cover;
+        display: block; /* 消除圖片下方間距 */
+        border-top-left-radius: 20px; /* 配合 .card 的圓角 */
+        border-top-right-radius: 20px;
+    }
+
+/* 小卡設定 */
+    .card {
+        color: #000000;
+        background-color: #ffffff;
+        width: 200px;
+        overflow: hidden;/*隱藏超出小卡範圍的內容*/
+        box-shadow: 0 0 10px 0 rgba(161, 174, 194, 0.5);
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-decoration: none;
+        display: block; /* 讓卡片整個成為可點擊區塊 */
+        border-radius: 20px; /* 倒角 */
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card-content {
+        padding: 0px 16px 20px 16px; /*順序：上右下左*/
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+    .card-content h3{
+        margin: 8px 0;
+        font-size: 24px;
+        font-weight: bold;
+        color:rgb(0, 0, 0);
+        }
+    .card-content p {
+        line-height: 150%;
+    }
+    .price {
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: auto;
+    }
+
+/*主圖卡設定*/
+    main {
+        height: 400px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 500px;
+       
+    }
+    main h1 {
+        font-size: 50px;
+        font-family: sans-serif;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+        /*設定文字陰影：X 軸位置 / Y 軸位置 / 模糊大小 / 顏色*/
+    }
+    main h3 {
+        font-size: 30px;
+        text-shadow: 0 0 4px rgb(0, 0, 0, 0.6);
+        line-height: 2.1;        margin-top: 20px;    }
+
+
+/* 小卡列表設定 */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 100px 50px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.top-bar {
+    background-color: rgba(0, 0, 0, 0);
+    height: 300px;
+    width: 100%;
+}
+/* 頂部海報 */
+.poster {
+    width: 100%;
+    height: 1080px; /* 可視情況調整 */
+    background-image: url(img/222222222.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .poster { height: 1080p; }
+}
+/* 控制背景圖片和亮度 */
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center 0%;
+    background-image: url(img/IMG_2861.png);    filter: brightness(0.5);}
+</style>
+<div id="bg"></div>
+<div class="poster" role="img" aria-label="海報"></div>
+<div class="top-bar"></div>
+<h1 style="text-align: center;">Sticker Shop</h1>
+<h2 style="text-align: center;">The trendiest stickers and fonts.
+    Discover the trendiest stickers and fonts to express yourself with style.
+From everyday humor to street-inspired designs and bold statements, every sticker is carefully crafted to help your personality stand out.
+Mix, match, and use freely—make every message more memorable.
+</h2>
+    <main>
+        <h1 class="center-align"></h1>
+        <h3>
+        </h3>
+    </main>
+
+<h2>Sticker Content</h2>
+<!-- 01 -->
+<section class="card-list">
+   <a class="card" href="img/line2.png" target="_blank">
+    <img src="img/line2.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">馬馬砸摳!</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$23.50</p>
+        </div>
+    </a>
+
+<!-- 02-->
+   <a class="card" href="img/line3.png" target="_blank">
+    <img src="img/line3.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">億飛沖天</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$17.25</p>
+        </div>
+    </a>
+
+<!-- 03 -->
+   <a class="card" href="img/" target="_blank">
+    <img src="img/line4.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">馬子在這</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$15.50</p>
+        </div>
+    </a>
+
+<!-- 04 -->
+   <a class="card" href="img/13.jpg" target="_blank">
+    <img src="img/line5.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title"></h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$20.00</p>
+        </div>
+    </a>
+<!-- 05 -->
+    <a class="card" href="img/14.jpg" target="_blank">
+    <img src="img/line6.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">馬攏沒錢</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$11.00</p>
+        </div>
+    </a>
+    <!-- 06 --> 
+    <a class="card" href="img/06.jpg" target="_blank">
+    <img src="img/line7.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">馬都讚讚</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$25.00</p>
+        </div>
+    </a><a class="card" href="img/07.jpg" target="_blank">
+    <img src="img/line8.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">揪抖馬得</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$10.00</p>
+        </div>
+    </a><a class="card" href="img/line1.png" target="_blank">
+    <img src="img/line1.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">馬到成功</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$73.00</p>
+        </div>
+    </a><a class="card" href="img/09.jpg" target="_blank">
+    <img src="img/line9.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">腳馬了</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$20.00</p>
+        </div>
+    </a><a class="card" href="img/10.jpg" target="_blank">
+    <img src="img/line10.png" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">阿今馬安抓</h3>      
+            <p class="card-intro">A horse</p>
+            <p class="price">$50.00</p>
+        </div>
+    </a><a class="card" href="img/00.jpg" target="_blank">
+    <img src="img/00.jpg" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">Not yet available</h3>      
+            <p class="card-intro">give me credit give me credit</p>
+        </div>
+    </a><a class="card" href="img/00.jpg" target="_blank">
+    <img src="img/00.jpg" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">Not yet available</h3>      
+            <p class="card-intro">give me credit give me credit</p>
+        </div>
+    </a><a class="card" href="img/00.jpg" target="_blank">
+    <img src="img/00.jpg" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">Not yet available</h3>      
+            <p class="card-intro">give me credit give me credit</p>
+           
+        </div>
+        <!-- 10 -->
+    </a></a><a class="card" href="img/00.jpg" target="_blank">
+    <img src="img/00.jpg" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">Not yet available</h3>      
+            <p class="card-intro">give me credit give me credit</p>
+        </div>
+    </a>
+</a><a class="card" href="img/00.jpg" target="_blank">
+    <img src="img/00.jpg" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">Not yet available</h3>      
+            <p class="card-intro">give me credit give me credit</p>
+        </div>
+    </a><a class="card" href="img/00.jpg" target="_blank">
+    <img src="img/00.jpg" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">Not yet available</h3>      
+            <p class="card-intro">give me credit give me credit</p>
+        </div>
+    </a>
+</section>
+
+</body>
+</html>
